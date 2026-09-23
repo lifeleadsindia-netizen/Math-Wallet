@@ -44,7 +44,7 @@
                                 <td>{{ $list['memberid'] }}</td>
                                 <td>{{ getName($list['memberid']) }}</td>
                                 <td>$ {{ number_format($list['total_investment'], 2) }}</td>
-                                <td>{{ $list['rate'] }}%</td>
+                                <td>{{ $list['rate'] }} %</td>
                                 <td>{{ $list['installment'] }}</td>
                                 <td>$ {{ number_format($list['amount'], 2) }}</td>
                                 <td>

@@ -54,7 +54,7 @@
                                 <td>{{ $i }}</td>
                                 <td>{{ date('d-m-Y', strtotime($dateVal)) }}</td>
                                 <td>{{ $memberidVal }}</td>
-                                <td>Stage {{ $levelVal }}</td>
+                                <td>{{ $levelVal }}</td>
                                 <td>{{ $teamVal }}</td>
                                 <td>$ {{ number_format($stakingVal, 2) }}</td>
                                 <td>$ {{ number_format($amountVal, 2) }}</td>
