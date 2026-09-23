@@ -31,7 +31,7 @@
                             <th>Total Investment</th>
                             <th>Rate</th>
                             <th>Installment</th>
-                            <th>Amount</th>
+                            {{-- <th>Amount</th> --}}
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -46,7 +46,7 @@
                                 <td>$ {{ number_format($list['total_investment'], 2) }}</td>
                                 <td>{{ $list['rate'] }} %</td>
                                 <td>{{ $list['installment'] }}</td>
-                                <td>$ {{ number_format($list['amount'], 2) }}</td>
+                                {{-- <td>$ {{ number_format($list['amount'], 2) }}</td> --}}
                                 <td>
                                     @if ($list['status'] == 'Unpaid')
                                         <span class="inc-badge unpaid"><i class="fa-solid fa-clock"></i>{{ $list['status'] }}</span>
