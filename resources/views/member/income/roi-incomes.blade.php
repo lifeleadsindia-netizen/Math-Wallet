@@ -32,7 +32,7 @@
                             <th>Rate</th>
                             <th>Installment</th>
                             <th>Amount</th>
-                            <th>Status</th>
+                            {{-- <th>Status</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -47,7 +47,7 @@
                                 <td>{{ $list['rate'] }} %</td>
                                 <td>{{ $list['installment'] }}</td>
                                 <td>$ {{ number_format($list['amount'], 2) }}</td>
-                                <td>
+                                {{-- <td>
                                     @if ($list['status'] == 'Unpaid')
                                         <span class="inc-badge unpaid"><i class="fa-solid fa-clock"></i>{{ $list['status'] }}</span>
                                     @elseif ($list['status'] == 'Paid')
@@ -55,7 +55,7 @@
                                     @else
                                         <span class="inc-badge pending"><i class="fa-solid fa-hourglass-half"></i>{{ $list['status'] }}</span>
                                     @endif
-                                </td>
+                                </td> --}}
                             </tr>
                             @php $i++; @endphp
                         @endforeach
